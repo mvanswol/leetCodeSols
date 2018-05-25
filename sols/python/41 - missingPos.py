@@ -22,10 +22,10 @@ class Solution(object):
 			else:
 				if nums[nums[i] - 1] == nums[i]:
 					i += 1
-					continue
-				temp = nums[nums[i] - 1]
-				nums[nums[i] - 1] = nums[i]
-				nums[i] = temp
+				else:
+					temp = nums[nums[i] - 1]
+					nums[nums[i] - 1] = nums[i]
+					nums[i] = temp
 
 
 		for i in range(size):
